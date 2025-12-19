@@ -5,15 +5,12 @@ def goLogin(usernameVal, passwordVal):
     try:
         username = usernameVal.get()
         password = int(passwordVal.get())
-
         if username.isdigit():
-            messagebox.showerror("Login", "Username tidak boleh angka")
-        
+            messagebox.showerror("Login", "Username tidak boleh angka")     
         if username == "admin" and password == 12345678:
             messagebox.showinfo("Login", "Login Berhasil")
         else:
             messagebox.showerror("Login", "Login Gagal")
-            
     except ValueError:
         messagebox.showerror("Login", "Password harus berupa angka")
 
