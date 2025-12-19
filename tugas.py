@@ -16,7 +16,7 @@ def goLogin(usernameVal, passwordVal):
 
 root = tk.Tk()
 root.title("Login Form")
-root.geometry("400x250")
+root.geometry("400x260")
 # input layot
 inputFrame = ttk.LabelFrame(root, text="Selamat Datang")
 inputFrame.pack(padx=10, pady=10, fill="x")
